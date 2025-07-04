@@ -18,6 +18,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  position: relative;
 }
 
 h2 {
@@ -161,4 +162,24 @@ footer p {
 .botao-membro:hover {
   background-color: #1b5e20;
   transform: scale(1.05);
+}
+.login-link {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.login-link a {
+  color: rgb(99, 190, 99);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.login-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  
 }
