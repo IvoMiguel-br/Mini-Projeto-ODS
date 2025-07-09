@@ -160,7 +160,7 @@ footer p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .botao-membro:hover {
-  background-color: #1b5e20;
+  background-color: #286d2c;
   transform: scale(1.05);
 }
 .login-link {
@@ -169,7 +169,7 @@ footer p {
   right: 30px;
 }
 .login-link a {
-  color: rgb(99, 190, 99);
+  color: rgb(11, 56, 255);
   text-decoration: none;
   display: flex;
   align-items: center;

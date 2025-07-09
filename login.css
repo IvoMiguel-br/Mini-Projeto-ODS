@@ -1,0 +1,81 @@
+header {
+  background-color: rgba(0, 0, 0, 0.5); 
+  font-size: 45px;
+  margin: 3% 1% 1% 1%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  position: relative;
+}
+
+.login-container {
+    background-color: white;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-image: url(onu_login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(45, 45, 173);
+}
+
+.login-container h2 {
+    margin-top: 0;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form label {
+    color: rgb(45, 45, 173);
+    font-family: sans-serif;
+    margin-bottom: rgb(45, 45, 173);
+    font-weight: bold;
+}
+
+#login-form input {
+    
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(45, 45, 173);
+    border-radius: 5px;
+}
+
+#entrar-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#entrar-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#entrar-btn:enabled{
+    color: white;
+}
