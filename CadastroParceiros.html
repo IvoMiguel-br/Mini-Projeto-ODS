@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Cadastro de Parceiros</title>
-  <link rel="stylesheet" href="CadastroParceiros.css">
-</head>
-<body>
-  <h1>Cadastro de Parceiro</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Parceiros</title>
+    <link rel="stylesheet" href="./styles/CadastroParceiros.css" />
+  </head>
+  <body>
+    <h1>Cadastro de Parceiro</h1>
 
-  <form id="form-parceiro">
-    <label>Nome do Parceiro:
-      <input type="text" name="nomeParceiro" required>
-    </label>
-    <label>Tipo do Parceiro:
-      <select name="tipoParceiro" required>
-        <option value="ECO">Ecoponto</option>
-        <option value="COO">Cooperativa</option>
-        <option value="PEV">Ponto de Entrega Voluntária</option>
-      </select>
-    </label>
-
-    <label>Responsável:
-      <input type="text" name="responsavelParceiro" required>
-    </label>
-
-    <label>Telefone:
-      <input type="tel" name="telResponsavel" required>
-    </label>
-
-    <label>E-mail:
-      <input type="email" name="emailResponsavel" required>
-    </label>
-
-    <fieldset>
-      <legend>Endereço</legend>
-      <label>Rua:
-        <input type="text" name="rua" required>
+    <form id="form-parceiro">
+      <label
+        >Nome do Parceiro:
+        <input type="text" name="nomeParceiro" required />
       </label>
-      <label>Número:
-        <input type="number" name="numero" required>
+      <label
+        >Tipo do Parceiro:
+        <select name="tipoParceiro" required>
+          <option value="ECO">Ecoponto</option>
+          <option value="COO">Cooperativa</option>
+          <option value="PEV">Ponto de Entrega Voluntária</option>
+        </select>
       </label>
-      <label>Bairro:
-        <input type="text" name="bairro" required>
+
+      <label
+        >Responsável:
+        <input type="text" name="responsavelParceiro" required />
       </label>
-    </fieldset>
 
-    <fieldset>
-  <legend><strong>Tipos de resíduos aceitos:</strong></legend>
-  <div class="checkbox-group">
-    <label><input type="checkbox" name="papel"> Papel</label>
-    <label><input type="checkbox" name="plastico"> Plástico</label>
-    <label><input type="checkbox" name="vidro"> Vidro</label>
-    <label><input type="checkbox" name="metal"> Metal</label>
-    <label><input type="checkbox" name="oleoCozinha"> Óleo de cozinha</label>
-    <label><input type="checkbox" name="pilhaBateria"> Pilhas e baterias</label>
-    <label><input type="checkbox" name="eletronico"> Eletrônicos</label>
-    <label><input type="checkbox" name="roupa"> Roupas</label>
-    <label><input type="checkbox" name="outros"> Outros</label>
-  </div>
-</fieldset>
+      <label
+        >Telefone:
+        <input type="tel" name="telResponsavel" required />
+      </label>
 
-    <button type="submit">Enviar</button>
-  </form>
+      <label
+        >E-mail:
+        <input type="email" name="emailResponsavel" required />
+      </label>
 
-  <script src="CadastroParceiros.js"></script>
-</body>
+      <fieldset>
+        <legend>Endereço</legend>
+        <label
+          >Rua:
+          <input type="text" name="rua" required />
+        </label>
+        <label
+          >Número:
+          <input type="number" name="numero" required />
+        </label>
+        <label
+          >Bairro:
+          <input type="text" name="bairro" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong>Tipos de resíduos aceitos:</strong></legend>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="papel" /> Papel</label>
+          <label><input type="checkbox" name="plastico" /> Plástico</label>
+          <label><input type="checkbox" name="vidro" /> Vidro</label>
+          <label><input type="checkbox" name="metal" /> Metal</label>
+          <label><input type="checkbox" name="oleoCozinha" /> Óleo de cozinha</label>
+          <label><input type="checkbox" name="pilhaBateria" /> Pilhas e baterias</label>
+          <label><input type="checkbox" name="eletronico" /> Eletrônicos</label>
+          <label><input type="checkbox" name="roupa" /> Roupas</label>
+          <label><input type="checkbox" name="outros" /> Outros</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="./js/CadastroParceiros.js"></script>
+  </body>
 </html>

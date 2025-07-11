@@ -19,14 +19,14 @@ document.getElementById("form-parceiro").addEventListener("submit", async functi
     pilhaBateria: form.pilhaBateria.checked,
     eletronico: form.eletronico.checked,
     roupa: form.roupa.checked,
-    outros: form.outros.checked,
+    outros: form.outros.checked
   };
 
   try {
     const response = await fetch("https://6860899b8e74864084437167.mockapi.io/jmt-futurodev/api/parceiros", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+      body: JSON.stringify(data)
     });
     if (response.ok) {
       alert("Dados enviados com sucesso!");
@@ -34,10 +34,10 @@ document.getElementById("form-parceiro").addEventListener("submit", async functi
     } else {
       alert("Erro ao enviar dados. Tente novamente.");
     }
-    if (!data.nomeParceiro || !data.tipoParceiro || !data.telResponsavel) {
-      alert("Preencha todos os campos obrigatórios!");
-      return;
-    }
+    if (!dados.nomeParceiro || !dados.tipoParceiro || !dados.telResponsavel) {
+  alert('Preencha todos os campos obrigatórios!');
+  return;
+}
   } catch (error) {
     console.error("Erro:", error);
     alert("Erro de conexão.");
