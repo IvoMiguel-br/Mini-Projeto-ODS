@@ -1,17 +1,16 @@
-
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
 
-  background-image: url(onu.png);
+  background-image: url(../assets/onu.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 header {
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 20px;
   text-align: center;
@@ -78,10 +77,11 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.section, header, footer {
+.section,
+header,
+footer {
   transition: all 0.3s ease-in-out;
 }
-
 
 footer {
   background-color: #1b1b1b;
@@ -105,14 +105,13 @@ footer .logos {
   margin-top: 20px;
   flex-wrap: wrap;
   gap: 40px;
-
 }
 
 footer .logos img {
   height: 70px;
-  margin:  0 10px;
+  margin: 0 10px;
   object-fit: contain;
-  transition: transform 0.3s ease ;
+  transition: transform 0.3s ease;
 }
 
 footer .logos img:hover {
@@ -181,5 +180,4 @@ footer p {
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  
 }
