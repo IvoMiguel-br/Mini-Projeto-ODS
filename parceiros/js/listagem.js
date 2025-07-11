@@ -43,7 +43,7 @@ function renderCards(lista) {
   lista.forEach((p) => {
     const card = document.createElement("div");
     card.className = "card";
-    card.onclick = () => (window.location.href = `detalhe.html?id=${p.id}`);
+    card.onclick = () => (window.location.href = `./detalhe.html?id=${p.id}`);
 
     const tipo = p.tipoParceiro?.toUpperCase();
     const avatar = iconesPorTipo[tipo] || "";
